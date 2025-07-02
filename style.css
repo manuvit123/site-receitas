@@ -13,3 +13,7 @@ header {
     color: white;
     position: relative;
 }
+
+body {
+    background-color: black;
+}
