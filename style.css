@@ -1,19 +1,160 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Simples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        .recipe {
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .recipe h2 {
+            color: #4CAF50;
+        }
+        .recipe ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .recipe ul li {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Espaço entre elementos principais */
-    padding: 12px;
-    background-color: black;
-    color: white;
-    position: relative;
-}
+<header>
+    <h1>Receitas Simples</h1>
+    <p>Deliciosas receitas doces e salgadas para você!</p>
+</header>
 
-body {
-    background-color: black;
-}
+<nav>
+    <a href="#doces">Doces</a>
+    <a href="#salgados">Salgados</a>
+</nav>
+
+<div class="content">
+
+    <section id="doces">
+        <h2>Receitas Doces</h2>
+
+        <div class="recipe">
+            <h3>Brigadeiro</h3>
+            <ul>
+                <li>1 lata de leite condensado</li>
+                <li>2 colheres de sopa de achocolatado</li>
+                <li>1 colher de sopa de manteiga</li>
+                <li>Chocolate granulado para enrolar</li>
+            </ul>
+            <p>Modo de preparo: Em uma panela, misture o leite condensado, o achocolatado e a manteiga. Cozinhe em fogo médio, mexendo sempre até o ponto de brigadeiro. Enrole e passe no granulado.</p>
+        </div>
+
+        <div class="recipe">
+            <h3>Bolo de Chocolate</h3>
+            <ul>
+                <li>2 ovos</li>
+                <li>1 xícara de açúcar</li>
+                <li>1 xícara de farinha de trigo</li>
+                <li>1/2 xícara de cacau em pó</li>
+                <li>1/2 xícara de leite</li>
+                <li>1/4 de xícara de óleo</li>
+                <li>1 colher de fermento em pó</li>
+            </ul>
+            <p>Modo de preparo: Bata todos os ingredientes no liquidificador até formar uma massa homogênea. Coloque em uma forma untada e asse a 180°C por 30 minutos.</p>
+        </div>
+
+        <div class="recipe">
+            <h3>Pudim de Leite Condensado</h3>
+            <ul>
+                <li>1 lata de leite condensado</li>
+                <li>2 latas de leite comum</li>
+                <li>3 ovos</li>
+                <li>1 xícara de açúcar</li>
+            </ul>
+            <p>Modo de preparo: Faça o caramelo com o açúcar em uma forma. Bata os demais ingredientes no liquidificador e despeje na forma com o caramelo. Asse em banho-maria por cerca de 1 hora.</p>
+        </div>
+    </section>
+
+    <section id="salgados">
+        <h2>Receitas Salgadas</h2>
+
+        <div class="recipe">
+            <h3>Empadão de Frango</h3>
+            <ul>
+                <li>1 peito de frango cozido e desfiado</li>
+                <li>2 colheres de sopa de óleo</li>
+                <li>1 cebola picada</li>
+                <li>2 tomates picados</li>
+                <li>1 lata de milho</li>
+                <li>1 pacote de massa de empadão</li>
+            </ul>
+            <p>Modo de preparo: Refogue a cebola e o tomate no óleo, adicione o frango desfiado e o milho. Forre uma forma com a massa de empadão, coloque o recheio e cubra com mais massa. Asse a 180°C por 30 minutos.</p>
+        </div>
+
+        <div class="recipe">
+            <h3>Esfiha de Carne</h3>
+            <ul>
+                <li>500g de carne moída</li>
+                <li>1 cebola picada</li>
+                <li>1 tomate picado</li>
+                <li>1 pacote de massa para esfiha</li>
+                <li>Sal e pimenta a gosto</li>
+            </ul>
+            <p>Modo de preparo: Refogue a carne com a cebola e o tomate, adicione sal e pimenta. Recheie as massas de esfiha e asse a 180°C por 20 minutos.</p>
+        </div>
+
+        <div class="recipe">
+            <h3>Quiche de Alho-Poró</h3>
+            <ul>
+                <li>1 alho-poró picado</li>
+                <li>1 pacote de massa de torta pronta</li>
+                <li>2 ovos</li>
+                <li>200ml de creme de leite</li>
+                <li>Queijo ralado a gosto</li>
+            </ul>
+            <p>Modo de preparo: Refogue o alho-poró até ficar macio. Misture os ovos, o creme de leite e o queijo. Coloque o alho-poró na forma com a massa, despeje a mistura e asse a 180°C por 30 minutos.</p>
+        </div>
+    </section>
+
+</div>
+
+<footer style="text-align:center; padding:20px; background-color:#333; color:white;">
+    <p>&copy; 2025 Receitas Simples | Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
